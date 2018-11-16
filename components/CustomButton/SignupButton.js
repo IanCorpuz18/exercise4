@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text, View, StyleSheet } from 'react-native';
-const CustomButton = props => (
+const SignupButton = props => (
     <TouchableOpacity onPress={props.onPress}>
         <View style={[styles.button,{backgroundColor:"#00BD57"},props.border]}> 
             <Text style={[{color:"white"},props.textColor, props.textWeight]}>{props.children}</Text>
@@ -16,9 +16,9 @@ const styles = StyleSheet.create({
       borderWidth: 2,
       borderColor:"#00BD57",
       alignItems: 'center',
-      width:"60%",
+      width:"80%",
       alignSelf:"center"
     }
 })
 
-export default CustomButton;
+export default SignupButton;
