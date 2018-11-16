@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import {View,Text,StyleSheet, TouchableOpacity} from 'react-native'
+import {View,Text,StyleSheet, TouchableOpacity, Image} from 'react-native'
 import CustomButton from "../../CustomButton/CustomButton"
 import CustumButtonFb from "../../CustomButton/CustomButtonFb"
 import CustomButtonTwitter from '../../CustomButton/CustomButtonTwitter';
 import CustomInput from '../../CustomTextInput/CustomTextInput';
 import Icon from "react-native-vector-icons/Ionicons"
+import Pancake from "..//assets/pancake.jpg"
    class LoginScreen extends Component{
      render(){
     return(
@@ -12,7 +13,7 @@ import Icon from "react-native-vector-icons/Ionicons"
      <View style={{alignItems:"center", marginTop:20}}>
        
      
-      <View style={{flexDirection:"row"}}>
+      <View style={{flexDirection:"row", alignContent:"space-between"}}>
         <Icon name="md-arrow-back" color="black" size={30} />
         <Text style={{fontWeight:"bold",fontSize:15}}>SIGN IN</Text>
         </View>
@@ -28,7 +29,7 @@ import Icon from "react-native-vector-icons/Ionicons"
         <View style={{alignItems:"center"}}>
         <View style={{flexDirection:"row"}}>
         <Text>Forgot Password? </Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() =>  this.props.navigation.navigate('ForgotPass')}>
         <Text style={{color:"#9ACD32"}}>Click here</Text></TouchableOpacity>
         </View>
         <Text>OR</Text>
@@ -36,6 +37,9 @@ import Icon from "react-native-vector-icons/Ionicons"
         </View>
         <CustumButtonFb>CONNECT WITH FACEBOOK</CustumButtonFb>
         <CustomButtonTwitter>CONNECT WITH TWITTER</CustomButtonTwitter>
+        <View style={{width:370, height:210}}>
+        <Image source={Pancake} style={{ width:"100%", height:"100%"}} />
+        </View>
         </View>
         </View>
     )

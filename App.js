@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import  HomeStackNavi  from './Navigators/HomeStackNavi'
 import { TopNavi } from './Navigators/TopNavi'
-
-
+import Modal from './Navigators/Modal'
+import TabStack from "./Navigators/TabStack"
 export default class App extends Component {
   render() {
     return (
@@ -15,8 +15,9 @@ export default class App extends Component {
 
 
 const Switchnavi = createSwitchNavigator({
-  Auth: HomeStackNavi,
-  Main: TopNavi
+  Auth: Modal,
+  Main: TabStack
+
 },{
 initialRouteName: 'Auth'
 })

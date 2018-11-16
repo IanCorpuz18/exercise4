@@ -14,11 +14,11 @@ import Icon from 'react-native-vector-icons/Ionicons';
      
        <View style={{flexDirection:"row"}}>
          <Icon name="md-arrow-back" color="black" size={30} />
-         <Text style={{fontWeight:"bold",fontSize:15}}>SIGN IN</Text>
+         <Text style={{fontWeight:"bold",fontSize:15}}>REGISTER NOW</Text>
          </View>
          </View>
     <View style={{alignItems:"center"}}>
-        <CustomInput placeholder={"USERNAME"} style={{backgroundColor:"#F6F6F5"}}></CustomInput>
+        <CustomInput  placeholder={"USERNAME"} style={{backgroundColor:"#F6F6F5"}}></CustomInput>
         <CustomInput placeholder={"EMAIL ADDRESS"} style={{backgroundColor:"#F6F6F5"}}></CustomInput>
         <CustomInput placeholder={"PASSWORD"} style={{backgroundColor:"#F6F6F5"}}></CustomInput>
         <CustomInput placeholder={"CONFIRM PASSWORD"} style={{backgroundColor:"#F6F6F5"}}></CustomInput>

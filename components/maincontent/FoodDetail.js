@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import {View,Text,StyleSheet} from 'react-native'
 
-   class MainMenu extends Component{
+   class FoodDetail extends Component{
      render(){
     return(
     <View>
-        <Text>MainMenu</Text>
+        <Text>FoodDetail</Text>
     </View>
     )
     }
     }
-export default MainMenu;
+export default FoodDetail;

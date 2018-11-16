@@ -7,6 +7,7 @@ const CustomInput = props =>(
     {...props}
     style={styles.input}
     placeholder={props.placeholder}
+    
     />
 )
 
@@ -18,7 +19,9 @@ const styles = StyleSheet.create({
         borderWidth:2,
         borderColor:"#F6F6F5",
         borderRadius: 5,
-        backgroundColor: '#F6F6F5'
+        backgroundColor: '#F6F6F5',
+        alignItems: 'center',
+        
     }
 })
 
