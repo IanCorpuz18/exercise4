@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image,ScrollView } from 'react-native';
 import { reviews } from '../../../reviewsContent';
+import Icon from 'react-native-vector-icons/Ionicons'
    class PlaceReviews  extends Component{
     state = {
         messages: reviews
@@ -12,6 +13,12 @@ import { reviews } from '../../../reviewsContent';
      render(){
     return(
         <View style={{backgroundColor:"white"}}>
+        <View >
+            <View style={{alignContent:"space-between", flexDirection:"row", width:"100%"}}>
+            <Text>6 Reviews</Text>
+            <Icon name="ios-star" color="yellow" size={30} />
+            </View>
+        </View>
         <ScrollView>
        <View style={styles.viewContainer}>
            {
@@ -19,9 +26,10 @@ import { reviews } from '../../../reviewsContent';
                   
                   
                   
-                       <View>
-
-                       </View>
+    <View>
+        <Image source={{ uri: item.img}}
+        style={styles.image}/>
+    </View>
 
 
                ))
@@ -33,4 +41,12 @@ import { reviews } from '../../../reviewsContent';
     }
     }
     
+const styles = StyleSheet.create({
+    image: {
+        width: 50,
+        height: 50,
+        borderRadius: 25
+    },
+
+})
 export default PlaceReviews;

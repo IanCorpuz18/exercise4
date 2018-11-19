@@ -29,9 +29,30 @@ export default RevNavigator = createMaterialTopTabNavigator({
 {
     initialRouteName:"Reviews",
     tabBarOptions:{
-        style:{
-            elevation:0
-        }
+        style: {
+            backgroundColor:'white',
+            // height:"10%",
+            // borderTopColor:"gray",
+            // borderTopWidth:.5
+          borderBottomColor:"black",
+          borderBottomWidth:.5,
+                elevation:0
+            
+        },
+        labelStyle:{
+            fontSize:11,
+            fontWeight:"bold"
+        },
+        // showIcon: true,
+        activeTintColor: "green",
+        inactiveTintColor: "black",
+    //   tabStyle:{
+    //       backgroundColor:"white"
+    //   },
+      indicatorStyle:{
+          backgroundColor:"white"
+      }
+    
     }
 }
 

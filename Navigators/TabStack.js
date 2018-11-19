@@ -27,7 +27,7 @@ export default TabStack = createStackNavigator({
         }
     ,
     Details: {screen: DetailScreen,
-    
+
         navigationOptions:{
             headerTintColor:"white",
             title: "Marmalade Burger Cafe",
@@ -37,8 +37,10 @@ export default TabStack = createStackNavigator({
                 
             },
             headerLeft:<Icon name="md-arrow-back" size={30} color="white" style={{marginLeft:10}}/>,
-            headerRight: <Icon name="ios-cart" size={30} color="white" style={{marginRight:10}}/>
-        }
+            headerRight: <Icon name="ios-cart" size={30} color="white" style={{marginRight:10}}/>,
+            
+        },
+        
         }
 
 },
