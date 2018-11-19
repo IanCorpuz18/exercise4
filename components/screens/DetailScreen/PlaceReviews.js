@@ -18,7 +18,7 @@ import Stars from '../DetailScreen/Stars'
 
             <View style={{alignItems:"center", flexDirection:"row", width:"100%"}}>
             <Text style={{marginLeft:15}}>6 Reviews</Text>
-            <View style={{marginLeft:150}}>
+            <View style={{marginLeft:170}}>
            <Stars/>
            </View>
             </View>
@@ -30,11 +30,11 @@ import Stars from '../DetailScreen/Stars'
                 
                   
                   
-    <View style={{height:120,width:"100%"}} key={index}>
+    <View style={{height:100,width:"100%"}} key={index}>
     <View style={{flexDirection:"column"}}>
     <View>
         <View style={{flexDirection:"row", width:"100%", alignContent:"center"}}>
-        <View >
+        <View style={{marginLeft:20}}>
         <Image source={{ uri: item.img}}
         style={styles.image}/>
         </View>
@@ -42,21 +42,22 @@ import Stars from '../DetailScreen/Stars'
         <View>
         <Text>{item.name}</Text>
     </View>
-    <View>
+    <View >
         <Text style={{fontSize:9}}>
             {item.date}
         </Text>
     </View>
    
     </View>
-    <View style={{width:"40%", marginLeft:24}}>
+    <View style={{width:"30%", marginLeft:24}}>
     <Stars/>
     </View>
         </View>
         </View>
         </View>
-        <View style={{marginBottom:50}}>
-            <Text>
+        
+        <View style={{marginTop:10,marginLeft:20, marginBottom:15, width:"100%"}}>
+            <Text style={{fontSize:12}}>
                 {item.msg}
             </Text>
           

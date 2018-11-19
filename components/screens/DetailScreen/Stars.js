@@ -5,11 +5,11 @@ import Icon from 'react-native-vector-icons/Ionicons'
      render(){
     return(
         <View style={{width:"100%", flexDirection:"row"}}>
-        <Icon name="ios-star" color="yellow" size={30} />
-        <Icon name="ios-star" color="yellow" size={30} />
-        <Icon name="ios-star" color="yellow" size={30} />
-        <Icon name="ios-star" color="yellow" size={30} />
-        <Icon name="ios-star" color="gray" size={30} />
+        <Icon name="ios-star" color="yellow" size={25} />
+        <Icon name="ios-star" color="yellow" size={25} />
+        <Icon name="ios-star" color="yellow" size={25} />
+        <Icon name="ios-star" color="yellow" size={25} />
+        <Icon name="ios-star" color="gray" size={25} />
         </View>
     )
     }

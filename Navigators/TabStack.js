@@ -18,9 +18,12 @@ export default TabStack = createStackNavigator({
               
             },
             headerLeft:
+            
                 <Icon name="ios-menu" size={30} color="white" style={{marginLeft:10}}/>
+                
                ,
             headerRight:
+            
             <Icon name="ios-cart" size={30} color="white" style={{marginRight:10}}/>,
           
         }
@@ -28,17 +31,21 @@ export default TabStack = createStackNavigator({
     ,
     Details: {screen: DetailScreen,
 
-        navigationOptions:{
-            headerTintColor:"white",
-            title: "Marmalade Burger Cafe",
+        navigationOptions: ({navigation}) =>{ 
+            return{ headerTintColor:"white",
+        title: "Marmalade Burger Cafe",
+        
+        headerStyle:{
+            backgroundColor:"#00BD57",
             
-            headerStyle:{
-                backgroundColor:"#00BD57",
-                
-            },
-            headerLeft:<Icon name="md-arrow-back" size={30} color="white" style={{marginLeft:10}}/>,
-            headerRight: <Icon name="ios-cart" size={30} color="white" style={{marginRight:10}}/>,
-            
+        },
+        headerLeft:
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+        <Icon name="md-arrow-back" size={30} color="white" style={{marginLeft:10}}/>
+        </TouchableOpacity>,
+        headerRight: <Icon name="ios-cart" size={30} color="white" style={{marginRight:10}}/>,
+        }
+           
         },
         
         }
