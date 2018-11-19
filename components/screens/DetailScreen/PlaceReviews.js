@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image,ScrollView } from 'react-native';
 import { reviews } from '../../../reviewsContent';
 import Icon from 'react-native-vector-icons/Ionicons'
+import Stars from '../DetailScreen/Stars'
    class PlaceReviews  extends Component{
     state = {
         messages: reviews
@@ -17,13 +18,7 @@ import Icon from 'react-native-vector-icons/Ionicons'
 
             <View style={{alignItems:"center", flexDirection:"row", width:"100%"}}>
             <Text>6 Reviews</Text>
-            <View style={{marginLeft:150,width:"50%", flexDirection:"row"}}>
-            <Icon name="ios-star" color="yellow" size={30} />
-            <Icon name="ios-star" color="yellow" size={30} />
-            <Icon name="ios-star" color="yellow" size={30} />
-            <Icon name="ios-star" color="yellow" size={30} />
-            <Icon name="ios-star" color="gray" size={30} />
-            </View>
+           <Stars/>
             </View>
         </View>
         <ScrollView>
@@ -31,14 +26,31 @@ import Icon from 'react-native-vector-icons/Ionicons'
        <View style={styles.viewContainer}>
            {
                this.state.messages.map((item, index) => (
-                  
+                
                   
                   
     <View>
+        <View style={{flexDirection:"row", width:"50%"}}>
+        <View>
         <Image source={{ uri: item.img}}
         style={styles.image}/>
+        </View>
+        <View style={{marginLeft:10,flexDirection:"column"}}>
+        <View>
+        <Text>{item.name}</Text>
     </View>
-
+    <View>
+        <Text style={{fontSize:9}}>
+            {item.date}
+        </Text>
+    </View>
+    <Stars/>
+    </View>
+    
+        </View>
+       
+    </View>
+    
 
                ))
            }
