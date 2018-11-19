@@ -13,13 +13,21 @@ import Icon from 'react-native-vector-icons/Ionicons'
      render(){
     return(
         <View style={{backgroundColor:"white"}}>
-        <View >
-            <View style={{alignContent:"space-between", flexDirection:"row", width:"100%"}}>
+        <View style={{width:"100%", marginTop:5,paddingBottom:10,borderBottomColor:"gray",borderBottomWidth:.5}}>
+
+            <View style={{alignItems:"center", flexDirection:"row", width:"100%"}}>
             <Text>6 Reviews</Text>
+            <View style={{marginLeft:150,width:"50%", flexDirection:"row"}}>
             <Icon name="ios-star" color="yellow" size={30} />
+            <Icon name="ios-star" color="yellow" size={30} />
+            <Icon name="ios-star" color="yellow" size={30} />
+            <Icon name="ios-star" color="yellow" size={30} />
+            <Icon name="ios-star" color="gray" size={30} />
+            </View>
             </View>
         </View>
         <ScrollView>
+            <Text></Text>
        <View style={styles.viewContainer}>
            {
                this.state.messages.map((item, index) => (
@@ -46,6 +54,11 @@ const styles = StyleSheet.create({
         width: 50,
         height: 50,
         borderRadius: 25
+    }, viewContainer: {
+        alignItems: "flex-start",
+        backgroundColor:"white",
+        
+
     },
 
 })
