@@ -56,7 +56,7 @@ import Stars from '../DetailScreen/Stars'
         </View>
         </View>
         
-        <View style={{marginTop:10,marginLeft:20, marginBottom:15, width:"100%"}}>
+        <View style={{marginTop:5,marginLeft:20, marginBottom:5, width:"100%"}}>
             <Text style={{fontSize:12}}>
                 {item.msg}
             </Text>
