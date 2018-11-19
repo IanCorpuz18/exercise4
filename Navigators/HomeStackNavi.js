@@ -1,5 +1,5 @@
 import { createStackNavigator, createMaterialTopTabNavigator, createSwitchNavigator } from 'react-navigation'; 
-import { TopNavi } from './TopNavi'
+import  TopNavi  from './TopNavi'
 import LoginScreen from '../components/screens/Login/LoginScreen'
 import SignupScreen from '../components/screens/Signup/SignupScreen'
 import MainScreen from '../components/screens/MainScreen'

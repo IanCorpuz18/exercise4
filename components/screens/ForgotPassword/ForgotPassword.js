@@ -23,7 +23,7 @@ import SignupButton from '../../CustomButton/SignupButton';
         <Text>the instruction to reset your</Text>
         <Text>password</Text>
         <View style={{width:"90%", alignItems:"center"}}>
-            <CustomInput placeholder={"EMAIL ADDRESS"} > </CustomInput>
+            <CustomInput placeholder={"EMAIL ADDRESS"} />
         </View>
         <View style={{width:"90%"}}>
             <SignupButton>SEND PASSWORD</SignupButton>

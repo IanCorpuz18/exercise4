@@ -13,18 +13,21 @@ import Pancake from "..//assets/pancake.jpg"
      <View style={{alignItems:"center", marginTop:20}}>
        
      
-      <View style={{flexDirection:"row", alignContent:"space-between"}}>
-        <Icon name="md-arrow-back" color="black" size={30} />
-        <Text style={{fontWeight:"bold",fontSize:15}}>SIGN IN</Text>
+      <View style={{flexDirection:"row", width:"100%", alignItems:"center"}}>
+      <TouchableOpacity onPress={ () => this.props.navigation.goBack() } >
+        <Icon name="md-arrow-back" color="black" size={30} style={{marginLeft:"30%"}}/>
+        </TouchableOpacity>
+        <Text style={{fontWeight:"bold",fontSize:15,marginLeft:"7%"}}>SIGN IN</Text>
         </View>
         </View>
-      
+      <Text> </Text>
+      <Text> </Text>
         <View style={{flex:1,justifyContent:"center"}}>
         <View style={{alignItems:"center"}}>
         <CustomInput placeholder={"EMAIL ADDRESS"} style={{backgroundColor:"#F6F6F5"}}></CustomInput>
         <CustomInput placeholder={"PASSWORD"} style={{backgroundColor:"#F6F6F5"}}></CustomInput>
         </View>
-        <CustomButton onPress={() =>  this.props.navigation.navigate('Content')}>LOG IN</CustomButton>
+        <CustomButton onPress={() =>  this.props.navigation.navigate('MainScreen')}>LOG IN</CustomButton>
         <Text> </Text>
         <View style={{alignItems:"center"}}>
         <View style={{flexDirection:"row"}}>
@@ -32,6 +35,7 @@ import Pancake from "..//assets/pancake.jpg"
         <TouchableOpacity onPress={() =>  this.props.navigation.navigate('ForgotPass')}>
         <Text style={{color:"#9ACD32"}}>Click here</Text></TouchableOpacity>
         </View>
+        <Text> </Text>
         <Text>OR</Text>
         <Text> </Text>
         </View>

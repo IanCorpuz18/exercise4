@@ -6,7 +6,7 @@ import DetailScreen from "../components/screens/DetailScreen/DetailScreen"
 export default Modal = createStackNavigator({
     Init: HomeStackNavi,
     ForgotPass : ForgotPassword,
-    Details:DetailScreen
+    Details: DetailScreen
     
 },{
     mode:'modal',

@@ -12,9 +12,11 @@ import Icon from 'react-native-vector-icons/Ionicons';
       <View style={{alignItems:"center", marginTop:20}}>
        
      
-       <View style={{flexDirection:"row"}}>
-         <Icon name="md-arrow-back" color="black" size={30} />
-         <Text style={{fontWeight:"bold",fontSize:15}}>REGISTER NOW</Text>
+       <View style={{flexDirection:"row", width:"100%",alignItems:"center"}}>
+       <TouchableOpacity onPress={ () => this.props.navigation.goBack() } >
+         <Icon name="md-arrow-back" color="black" size={30} style={{marginLeft:"30%"}}/>
+         </TouchableOpacity>
+         <Text style={{fontWeight:"bold",fontSize:15, marginLeft:"1%"}}>REGISTER NOW</Text>
          </View>
          </View>
     <View style={{alignItems:"center"}}>
@@ -23,11 +25,13 @@ import Icon from 'react-native-vector-icons/Ionicons';
         <CustomInput placeholder={"PASSWORD"} style={{backgroundColor:"#F6F6F5"}}></CustomInput>
         <CustomInput placeholder={"CONFIRM PASSWORD"} style={{backgroundColor:"#F6F6F5"}}></CustomInput>
         </View>
-        <View style={{flex:1,justifyContent:"center"}}>
+        <View style={{justifyContent:"center"}}>
         <View>
-       <SignupButton>SIGN UP</SignupButton>
+       <SignupButton onPress={() => this.props.navigation.navigate('Login')}>SIGN UP</SignupButton>
        <View style={{alignItems:"center"}}>
+       <Text>  </Text>
        <Text>OR</Text>
+       <Text>  </Text>
        </View>
        <CustomButtonFb>CONNECT WITH FACEBOOK</CustomButtonFb>
        <CustomButtonTwitter>CONNECT WITH TWITTER</CustomButtonTwitter>

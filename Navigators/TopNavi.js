@@ -2,11 +2,11 @@ import { createStackNavigator, createMaterialTopTabNavigator, createSwitchNaviga
 import MainMenu from '../components/maincontent/RestaurantsList'
 import Map from "../components/maincontent/RestaurantsMap"
 import React from 'react'
-export const TopNavi = createMaterialTopTabNavigator({
+export default TopNavi = createMaterialTopTabNavigator({
     MainMenu : {
         screen:MainMenu,
     navigationOptions: {
-        tabBarLabel: 'Main Menu',
+        tabBarLabel: 'Restaurants List',
         // tabBarIcon: ({ tintColor }) => (
         //     <Icon name="ios-search" color={tintColor} size={30} />
         // )
@@ -15,7 +15,7 @@ export const TopNavi = createMaterialTopTabNavigator({
     Map : {
         screen:Map,
     navigationOptions: {
-        tabBarLabel: 'Map',
+        tabBarLabel: 'Restaurants Map',
         // tabBarIcon: ({ tintColor }) => (
         //     <Icon name="ios-search" color={tintColor} size={30} />
         // )
@@ -30,18 +30,27 @@ export const TopNavi = createMaterialTopTabNavigator({
     tabBarOptions:{
         style: {
             backgroundColor:'white',
-            height:60,
-            borderTopColor:"gray",
-            borderTopWidth:.5
+            // height:"10%",
+            // borderTopColor:"gray",
+            // borderTopWidth:.5
+          
+                elevation:0
             
         },
         labelStyle:{
-            fontSize:9
+            fontSize:13,
+            fontWeight:"bold"
         },
-        showIcon: true,
-        activeTintColor: "black",
-        inactiveTintColor: "grey"
-
+        // showIcon: true,
+        activeTintColor: "green",
+        inactiveTintColor: "black",
+    //   tabStyle:{
+    //       backgroundColor:"white"
+    //   },
+      indicatorStyle:{
+          backgroundColor:"white"
+      }
     }
 
   });
+ 
